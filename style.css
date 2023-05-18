@@ -49,7 +49,7 @@ body {
 }
 
 img {
-    width: 500px;
+    max-width: 50%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -57,15 +57,12 @@ img {
 .container {
     background-color: hsl(244, 38%, 16%);
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     border-radius: 5px;
 }
 
 .conteudo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px;
+    padding: 60px;
     width: 500px;
 }
 
@@ -73,7 +70,7 @@ img {
     color: hsl(0, 0%, 100%);
     font-family: 'Inter';
     margin-bottom: 25px;
-    
+    font-size: 30px;
 }
 
 .purple {
@@ -83,5 +80,36 @@ img {
 .texto > p {
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    margin-bottom: 70px;
+    line-height: 1.75;
+}
+
+.infos {
+    display: flex;
+    gap: 70px;
+}
+
+.stat-number {
+    font-family: 'Inter';
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.stat-headings {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
     font-family: 'Lexend Deca';
+    font-size: 10px;
+}
+
+
+@media screen and (max-width: 1020px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
